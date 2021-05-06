@@ -7,7 +7,7 @@ A simple Utility Bot
 * Ban commands
 * Other Moderation Features
 # Installation
-* **Step 1.** You must need to have Python 3.8.2 or higher.
+* **Step 1.** You must have Python 3.8.2 or higher.
 * **Step 2.** You need to have discord.py installed: `pip install discord`
 * **Step 3.** If you are doing this on replit (recommended) make sure you have os installed also. `pip install os`
 * **Step 4.** Once you have os installed, make sure to put your token in the `.env` file
