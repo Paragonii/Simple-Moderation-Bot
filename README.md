@@ -26,3 +26,4 @@ If you are gonna host this on your own, you might as well follow this. (replit)
 * **Step 10.** Optionally, Select yourself as one of the "Alert Contacts To Notify" so you are notified via e-mail whenever your bot goes offline.
 * ![Image Here](https://i.imgur.com/yzRdE2K.png)
 * **Step 11.** Click on `Create Monitor` and you're good to go!
+# I hope you guys enjoy it as much as I do! Can't wait to see what changes you guys did to it.
