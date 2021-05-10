@@ -1,4 +1,4 @@
-# SimpleUtilityBot
+# UtilBot
 A simple Utility Bot
 # Features
 * A cool Help Command
