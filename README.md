@@ -1,5 +1,5 @@
 # UtilBot
-A simple Utility Bot
+A simple utility bot, features are below. You can invite the bot [here](https://discord.com/api/oauth2/authorize?client_id=841381111401283584&permissions=8&scope=bot)
 # Features
 * A cool Help Command
 * Leveling System
