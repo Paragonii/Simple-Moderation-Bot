@@ -29,6 +29,7 @@ async def on_ready():
         name = f'{members} members'
     ))
 
+#leveling does not work for right now, getting worked on
 @bot.event
 async def on_member_join(member):
     with open('users.json', 'r') as f:
@@ -91,7 +92,8 @@ async def level(ctx, member: discord.Member = None):
             users = json.load(f)
         lvl = users[str(id)]['level']
         await ctx.send(f'{member} is at level {lvl}!')
-
+#end of leveling
+	
 @bot.command()
 @commands.has_permissions(ban_members = True)
 async def ban(ctx, member : discord.Member, *, reason = None):
