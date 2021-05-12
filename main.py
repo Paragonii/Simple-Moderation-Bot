@@ -357,7 +357,17 @@ async def help(ctx):
     embed.add_field(name="warn",value="Warns a user")
     embed.add_field(name="warnings",value="Fetches a user's warnings")
     await ctx.send(embed=embed)
+
+@bot.command(aliases=['sayembed'])
+async def embed(ctx, title: str, description: str):
+    embed = discord.Embed(
+        title=title,
+        description=description,
+        colour=discord.Color.green()
+        )
     
+    await ctx.channel.send(embed=embed)
+		     
 try:
     keep_alive()
     bot.run(token)
