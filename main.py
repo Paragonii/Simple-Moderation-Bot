@@ -9,7 +9,7 @@ import random
 import datetime
 import time
 
-token = os.environ.get("TOKEN") 
+token = "token"
 intents = discord.Intents.default()
 intents.members = True
 command_prefix = "!" 
