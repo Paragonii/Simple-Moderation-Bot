@@ -213,20 +213,6 @@ async def embed(ctx, title: str, description: str):
         )
     
     await ctx.channel.send(embed=embed)
-
-with open('BadWords.txt', 'r') as f:
-    words = f.read()
-    badwords = words.split()
-
-@bot.event
-async def on_message(ctx, message):
-    msg = message.content 
-    for word in badwords:
-        if word in msg: 
-            await message.delete() 
-            await ctx.send("Dont use that word!")
-    await ctx.process_message(message)
-
 		     
 try:
     keep_alive()
