@@ -251,92 +251,6 @@ async def server(ctx):
     emb.set_thumbnail(url= bot.user.avatar_url)
     await ctx.send(embed=emb)
 
-def add(n: float, n2: float):
-	return n + n2
-
-def sub(n: float, n2: float):
-	return n - n2
-
-def rando(n: int, n2: int):
-	return random.randint(n, n2)
-
-def div(n: float, n2: float):
-	return n / n2
-
-def sqrt(n: float):
-	return math.sqrt(n)
-
-def mult(n: float, n2: float):
-	return n * n2
-
-@bot.command(aliases=['add','plus'])
-async def mathadd(ctx, x: float, y: float):
-	try:
-		result = add(x, y)
-		await ctx.send(result)
-
-	except:
-		pass
-
-@bot.command(aliases=['sub','minus'])
-async def mathsub(ctx, x: float, y: float):
-	try:
-		result = sub(x, y)
-		await ctx.send(result)
-
-	except:
-		pass
-
-@bot.command(aliases=['rando'])
-async def mathrando(ctx, x: int, y: int):
-	try:
-		result = rando(x, y)
-		await ctx.send(result)
-
-	except:
-		pass
-
-@bot.command(aliases=['div','divide'])
-async def mathdiv(ctx, x: float, y: float):
-	try:
-		result = div(x, y)
-		await ctx.send(result)
-
-	except:
-		pass
-
-@bot.command(aliases=['mult','times'])
-async def mathmult(ctx, x: float, y: float):
-	try:
-		result = mult(x, y)
-		await ctx.send(result)
-
-	except:
-		pass
-
-@bot.command(aliases=['sqrt','squareroute'])
-async def mathsqrt(ctx, x: float):
-	try:
-		result = sqrt(x)
-		await ctx.send(result)
-
-	except:
-		pass
-
-@bot.command(aliases=["reviver"])
-async def topic(ctx):
-  variable=[
-    "When was the last time you stayed up through the entire night?",
-    "What shouldn’t have happened but happened anyway?",
-    "How could carousels be spiced up so they are more exciting?",
-    "Are you good at keeping secrets?",
-    "What’s the craziest thing one of your teachers’ has done?",
-    "What do you wish was illegal?",
-    "What is your favorite video game console?",
-    "Have you ever tried archery?",
-    "What is the last “good” thing you ate?",]
-  await ctx.send("{}" .format(random.choice(variable)))
-
 @bot.command(aliases=['h'])
 async def help(ctx):
     print("Help command accepted!")
@@ -345,12 +259,9 @@ async def help(ctx):
     embed.add_field(name="clean",value="Purges a number of messages")
     embed.add_field(name="help",value="Shows this message")
     embed.add_field(name="kick",value="Kicks a mentioned user")
-    embed.add_field(name="level",value="Shows your level on the bot")
-    embed.add_field(name="Math Commands",value="Just type l!(add/sub/div/rando/mult/sqrt)")
     embed.add_field(name="mute",value="Mutes a user")
     embed.add_field(name="server-info",value="Fetches the server's info")
     embed.add_field(name="slowmode",value="Sets slowmode for a certain channel")
-    embed.add_field(name="topic",value="A mini chat reviver")
     embed.add_field(name="unban",value="Unbans a past banned user")
     embed.add_field(name="unmute",value="Unmutes a user")
     embed.add_field(name="user-info",value="Fetches a user's info")
