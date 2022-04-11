@@ -220,7 +220,8 @@ with open('BadWords.txt', 'r') as f:
 
 @bot.event
 async def on_message(ctx, message):
-    msg = message.content for word in badwords:
+    msg = message.content 
+    for word in badwords:
         if word in msg: 
             await message.delete() 
             await ctx.send("Dont use that word!")
