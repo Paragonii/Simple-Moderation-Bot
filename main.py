@@ -202,6 +202,7 @@ async def help(ctx):
     embed.add_field(name="user-info",value="Fetches a user's info")
     embed.add_field(name="warn",value="Warns a user")
     embed.add_field(name="warnings",value="Fetches a user's warnings")
+    embed.set_footer(text = "Made by [Paragonii](https://github.com/Paragonii)")
     await ctx.send(embed=embed)
 
 @bot.command(aliases=['sayembed'])
